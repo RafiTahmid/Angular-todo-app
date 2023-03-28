@@ -1,3 +1,3 @@
 <div *ngFor="let todo of todos">
-    <app-todo-items [todo]="todo"></app-todo-items>
+    <app-todo-items [todo]="todo" (todoDelete)="deleteTodo($event)"></app-todo-items>
 </div>
